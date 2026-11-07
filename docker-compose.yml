@@ -2,5 +2,5 @@
      web:
        build: .
        ports:
-         - "127.0.0.1:8080:80"
+         - "${BIND:-127.0.0.1}:${PORT:-8080}:80"
        restart: unless-stopped
